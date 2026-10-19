@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Platform window theme; Compose supplies Material 3 inside the activity.
+      enableEdgeToEdge() in MainActivity handles system bar colors, so we do NOT
+      set statusBarColor / navigationBarColor here — those are the deprecated APIs
+      that triggered the Play Console warning.
+    -->
+    <style name="Theme.ArrowPuzzle" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash_layerlist</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

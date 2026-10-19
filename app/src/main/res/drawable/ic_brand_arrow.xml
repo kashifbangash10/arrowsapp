@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The app mark: a rounded shaft with a solid triangular head, the same geometry the
+  board draws its arrows with. Authored on a 108x108 grid so it can be reused as the
+  adaptive-icon foreground, where the inner 72x72 is the safe zone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M34,50 L34,58 L62,58 L62,50 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M78,54 L58,40 L58,68 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M34,50 L34,58 L38,58 L38,50 Z" />
+</vector>

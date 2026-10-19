@@ -1,0 +1,152 @@
+package com.amowpuzzle.aitricker.data.level
+
+import com.amowpuzzle.aitricker.domain.generator.LevelGenerator
+import com.amowpuzzle.aitricker.domain.generator.LevelSpec
+import com.amowpuzzle.aitricker.domain.model.Difficulty
+import com.amowpuzzle.aitricker.domain.model.Level
+import java.util.concurrent.ConcurrentHashMap
+
+/**
+ * The shipped set of levels.
+ *
+ * Every level is described by a [LevelSpec] and built by [LevelGenerator] from a
+ * seed derived from the level number, so level 23 is always the same puzzle on
+ * every device and every install - but the whole 50-level curve stays a table of
+ * numbers that can be retuned, and adding level 51 means extending the table.
+ */
+object LevelCatalog {
+
+    const val TOTAL_LEVELS = 50
+
+    private val cache = ConcurrentHashMap<Int, Level>()
+
+    val levelIds: IntRange get() = 1..TOTAL_LEVELS
+
+    fun difficultyOf(id: Int): Difficulty = when {
+        id <= 15 -> Difficulty.EASY
+        id <= 30 -> Difficulty.NORMAL
+        id <= 47 -> Difficulty.HARD
+        else -> Difficulty.EXPERT
+    }
+
+    fun level(id: Int): Level {
+        val key = id.coerceIn(1, TOTAL_LEVELS)
+        cache[key]?.let { return it }
+        val built = LevelGenerator.generate(specFor(key))
+        return cache.putIfAbsent(key, built) ?: built
+    }
+
+    /** Warms [range] so tapping a level card never waits on generation. */
+    fun preload(range: Iterable<Int> = levelIds) = range.forEach { level(it) }
+
+    fun isCached(id: Int) = cache.containsKey(id)
+
+    /**
+     * The difficulty curve. Levels 1-5 teach the mechanic on a small board with
+     * plenty of legal opening moves; from there boards grow, arrows gain turns, and
+     * the number of arrows a player may tap on the untouched board falls to one or
+     * two, which is what makes the last levels feel tight.
+     */
+    private fun specFor(id: Int): LevelSpec = when {
+        // Tutorial: tiny boards, mostly straight arrows, obvious moves.
+        id <= 5 -> band(
+            id, 1, 5, cols = 6, rows = 7,
+            arrows = 6 to 10, free = 6 to 2, maxFree = 6 to 4, depth = 1 to 2,
+            density = 0.26f to 0.38f, pathLength = 2 to 3, turns = 0.10f to 0.22f
+        )
+        // Easy: first real dependencies.
+        id <= 10 -> band(
+            id, 6, 10, cols = 7, rows = 8,
+            arrows = 11 to 14, free = 3 to 2, maxFree = 5 to 4, depth = 2 to 3,
+            density = 0.32f to 0.42f, pathLength = 2 to 4, turns = 0.20f to 0.30f
+        )
+        id <= 15 -> band(
+            id, 11, 15, cols = 8, rows = 9,
+            arrows = 15 to 18, free = 3 to 2, maxFree = 4 to 4, depth = 3 to 3,
+            density = 0.36f to 0.46f, pathLength = 2 to 4, turns = 0.25f to 0.35f
+        )
+        // Normal: more intersections, chained dependencies, tempting dead ends.
+        id <= 20 -> band(
+            id, 16, 20, cols = 9, rows = 10,
+            arrows = 18 to 22, free = 2 to 2, maxFree = 4 to 3, depth = 3 to 4,
+            density = 0.40f to 0.48f, pathLength = 2 to 4, turns = 0.28f to 0.36f
+        )
+        id <= 25 -> band(
+            id, 21, 25, cols = 9, rows = 11,
+            arrows = 21 to 26, free = 2 to 2, maxFree = 3 to 3, depth = 4 to 4,
+            density = 0.44f to 0.50f, pathLength = 2 to 5, turns = 0.30f to 0.38f
+        )
+        id <= 30 -> band(
+            id, 26, 30, cols = 10, rows = 11,
+            arrows = 26 to 30, free = 2 to 2, maxFree = 3 to 3, depth = 4 to 5,
+            density = 0.46f to 0.52f, pathLength = 2 to 5, turns = 0.32f to 0.40f
+        )
+        // Hard: dense boards, long chains.
+        id <= 35 -> band(
+            id, 31, 35, cols = 10, rows = 12,
+            arrows = 28 to 34, free = 2 to 2, maxFree = 3 to 3, depth = 5 to 5,
+            density = 0.48f to 0.54f, pathLength = 2 to 5, turns = 0.34f to 0.42f
+        )
+        id <= 40 -> band(
+            id, 36, 40, cols = 11, rows = 12,
+            arrows = 34 to 40, free = 2 to 2, maxFree = 3 to 3, depth = 5 to 6,
+            density = 0.50f to 0.56f, pathLength = 2 to 5, turns = 0.36f to 0.44f
+        )
+        id <= 44 -> band(
+            id, 41, 44, cols = 11, rows = 13,
+            arrows = 37 to 46, free = 2 to 2, maxFree = 3 to 3, depth = 6 to 6,
+            density = 0.52f to 0.58f, pathLength = 2 to 6, turns = 0.38f to 0.46f
+        )
+        id <= 47 -> band(
+            id, 45, 47, cols = 12, rows = 14,
+            arrows = 47 to 55, free = 2 to 2, maxFree = 3 to 3, depth = 6 to 7,
+            density = 0.54f to 0.60f, pathLength = 2 to 6, turns = 0.40f to 0.48f
+        )
+        // Expert: barely any obvious opening.
+        else -> band(
+            id, 48, 50, cols = 13, rows = 15,
+            arrows = 52 to 70, free = 1 to 1, maxFree = 2 to 2, depth = 7 to 7,
+            density = 0.56f to 0.62f, pathLength = 2 to 6, turns = 0.42f to 0.50f
+        )
+    }
+
+    /** Interpolates one level out of a band, so no two levels in a band are identical. */
+    private fun band(
+        id: Int,
+        first: Int,
+        last: Int,
+        cols: Int,
+        rows: Int,
+        arrows: Pair<Int, Int>,
+        free: Pair<Int, Int>,
+        maxFree: Pair<Int, Int>,
+        depth: Pair<Int, Int>,
+        density: Pair<Float, Float>,
+        pathLength: Pair<Int, Int>,
+        turns: Pair<Float, Float>
+    ): LevelSpec {
+        val t = if (last == first) 0f else (id - first).toFloat() / (last - first)
+        fun lerpInt(range: Pair<Int, Int>) =
+            Math.round(range.first + (range.second - range.first) * t)
+        fun lerpFloat(range: Pair<Float, Float>) =
+            range.first + (range.second - range.first) * t
+
+        val target = lerpInt(arrows)
+        return LevelSpec(
+            id = id,
+            cols = cols,
+            rows = rows,
+            difficulty = difficultyOf(id),
+            targetArrows = target,
+            minArrows = (target * 0.78f).toInt().coerceAtLeast(4),
+            targetInitiallyFree = lerpInt(free),
+            maxInitiallyFree = lerpInt(maxFree),
+            minDependencyDepth = lerpInt(depth),
+            minDensity = lerpFloat(density),
+            minPathLength = pathLength.first,
+            maxPathLength = pathLength.second,
+            turnChance = lerpFloat(turns),
+            attempts = if (target >= 34) 10 else 16
+        )
+    }
+}

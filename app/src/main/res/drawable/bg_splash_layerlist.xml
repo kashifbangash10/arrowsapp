@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- What the window shows before the first Compose frame: the app, minus the arrows. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/brand_white" />
+    </item>
+    <item
+        android:width="96dp"
+        android:height="96dp"
+        android:drawable="@drawable/ic_brand_arrow_navy"
+        android:gravity="center" />
+</layer-list>

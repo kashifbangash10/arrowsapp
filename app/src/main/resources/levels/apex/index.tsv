@@ -1,0 +1,500 @@
+1001	Apex Lion	Apex Safari	96	96
+1002	Apex Giraffe	Apex Safari	136	136
+1003	Apex Rhinoceros	Apex Safari	114	114
+1004	Apex Hippopotamus	Apex Safari	118	118
+1005	Apex Zebra	Apex Safari	134	134
+1006	Apex Camel	Apex Safari	120	120
+1007	Apex Gorilla	Apex Safari	98	98
+1008	Apex Meerkat	Apex Safari	116	116
+1009	Apex Hyena	Apex Safari	120	120
+1010	Apex Warthog	Apex Safari	118	118
+1011	Apex Wolf	Apex Forest Friends	120	120
+1012	Apex Moose	Apex Forest Friends	122	122
+1013	Apex Bison	Apex Forest Friends	106	106
+1014	Apex Hedgehog	Apex Forest Friends	110	110
+1015	Apex Raccoon	Apex Forest Friends	108	108
+1016	Apex Skunk	Apex Forest Friends	112	112
+1017	Apex Beaver	Apex Forest Friends	104	104
+1018	Apex Badger	Apex Forest Friends	122	122
+1019	Apex Otter	Apex Forest Friends	114	114
+1020	Apex Lynx	Apex Forest Friends	118	118
+1021	Apex Kangaroo	Apex Farm & Outback	134	134
+1022	Apex Koala	Apex Farm & Outback	94	94
+1023	Apex Platypus	Apex Farm & Outback	128	128
+1024	Apex Wombat	Apex Farm & Outback	104	104
+1025	Apex Emu	Apex Farm & Outback	132	132
+1026	Apex Alpaca	Apex Farm & Outback	132	132
+1027	Apex Goat	Apex Farm & Outback	126	126
+1028	Apex Sheep	Apex Farm & Outback	114	114
+1029	Apex Pig	Apex Farm & Outback	120	120
+1030	Apex Rooster	Apex Farm & Outback	120	120
+1031	Apex Crocodile	Apex Reptiles & Amphibians	148	148
+1032	Apex Chameleon	Apex Reptiles & Amphibians	116	116
+1033	Apex Iguana	Apex Reptiles & Amphibians	132	132
+1034	Apex Gecko	Apex Reptiles & Amphibians	124	124
+1035	Apex Komodo Dragon	Apex Reptiles & Amphibians	136	136
+1036	Apex Cobra	Apex Reptiles & Amphibians	114	114
+1037	Apex Coiled Python	Apex Reptiles & Amphibians	102	102
+1038	Apex Frog	Apex Reptiles & Amphibians	102	102
+1039	Apex Axolotl	Apex Reptiles & Amphibians	118	118
+1040	Apex Salamander	Apex Reptiles & Amphibians	114	114
+1041	Apex Flamingo	Apex Bird Wonders	148	148
+1042	Apex Toucan	Apex Bird Wonders	122	122
+1043	Apex Pelican	Apex Bird Wonders	132	132
+1044	Apex Hummingbird	Apex Bird Wonders	138	138
+1045	Apex Kingfisher	Apex Bird Wonders	134	134
+1046	Apex Woodpecker	Apex Bird Wonders	132	132
+1047	Apex Hornbill	Apex Bird Wonders	124	124
+1048	Apex Quail	Apex Bird Wonders	126	126
+1049	Apex Parrot	Apex Bird Wonders	130	130
+1050	Apex Stork	Apex Bird Wonders	158	158
+1051	Apex Manta Ray	Apex Deep Ocean	120	120
+1052	Apex Hammerhead Shark	Apex Deep Ocean	120	120
+1053	Apex Swordfish	Apex Deep Ocean	150	150
+1054	Apex Anglerfish	Apex Deep Ocean	114	114
+1055	Apex Lionfish	Apex Deep Ocean	120	120
+1056	Apex Nautilus	Apex Deep Ocean	114	114
+1057	Apex Lobster	Apex Deep Ocean	118	118
+1058	Apex Shrimp	Apex Deep Ocean	112	112
+1059	Apex Sea Dragon	Apex Deep Ocean	140	140
+1060	Apex Seal	Apex Deep Ocean	134	134
+1061	Apex Dragonfly	Apex Tiny Creatures	116	116
+1062	Apex Ladybird	Apex Tiny Creatures	118	118
+1063	Apex Stag Beetle	Apex Tiny Creatures	116	116
+1064	Apex Grasshopper	Apex Tiny Creatures	136	136
+1065	Apex Praying Mantis	Apex Tiny Creatures	124	124
+1066	Apex Hercules Beetle	Apex Tiny Creatures	120	120
+1067	Apex Scorpion	Apex Tiny Creatures	112	112
+1068	Apex Ant	Apex Tiny Creatures	116	116
+1069	Apex Spider	Apex Tiny Creatures	116	116
+1070	Apex Cicada	Apex Tiny Creatures	104	104
+1071	Apex Rose	Apex Flower Studio	130	130
+1072	Apex Lotus	Apex Flower Studio	122	122
+1073	Apex Daffodil	Apex Flower Studio	126	126
+1074	Apex Orchid	Apex Flower Studio	114	114
+1075	Apex Hibiscus	Apex Flower Studio	108	108
+1076	Apex Daisy	Apex Flower Studio	122	122
+1077	Apex Poppy	Apex Flower Studio	108	108
+1078	Apex Lavender	Apex Flower Studio	130	130
+1079	Apex Iris	Apex Flower Studio	120	120
+1080	Apex Calla Lily	Apex Flower Studio	132	132
+1081	Apex Monstera Leaf	Apex Botanical	110	110
+1082	Apex Ginkgo Leaf	Apex Botanical	114	114
+1083	Apex Fern Frond	Apex Botanical	122	122
+1084	Apex Bonsai	Apex Botanical	104	104
+1085	Apex Baobab	Apex Botanical	114	114
+1086	Apex Weeping Willow	Apex Botanical	106	106
+1087	Apex Coral Branch	Apex Botanical	124	124
+1088	Apex Venus Flytrap	Apex Botanical	118	118
+1089	Apex Bamboo	Apex Botanical	148	148
+1090	Apex Succulent	Apex Botanical	110	110
+1091	Apex Pear	Apex Orchard & Harvest	126	126
+1092	Apex Strawberry	Apex Orchard & Harvest	110	110
+1093	Apex Banana	Apex Orchard & Harvest	138	138
+1094	Apex Orange Slice	Apex Orchard & Harvest	122	122
+1095	Apex Watermelon Slice	Apex Orchard & Harvest	110	110
+1096	Apex Aubergine	Apex Orchard & Harvest	122	122
+1097	Apex Bell Pepper	Apex Orchard & Harvest	112	112
+1098	Apex Broccoli	Apex Orchard & Harvest	102	102
+1099	Apex Pumpkin	Apex Orchard & Harvest	104	104
+1100	Apex Radish	Apex Orchard & Harvest	128	128
+1101	Apex Croissant	Apex Sweet Bakery	132	132
+1102	Apex Pretzel	Apex Sweet Bakery	96	96
+1103	Apex Donut	Apex Sweet Bakery	96	96
+1104	Apex Layer Cake	Apex Sweet Bakery	110	110
+1105	Apex Gingerbread Person	Apex Sweet Bakery	112	112
+1106	Apex Waffle	Apex Sweet Bakery	90	90
+1107	Apex Honey Dipper	Apex Sweet Bakery	146	146
+1108	Apex Candy Cane	Apex Sweet Bakery	146	146
+1109	Apex Wrapped Candy	Apex Sweet Bakery	128	128
+1110	Apex Macaron	Apex Sweet Bakery	98	98
+1111	Apex Kettle	Apex Kitchen Craft	100	100
+1112	Apex Teapot	Apex Kitchen Craft	112	112
+1113	Apex French Press	Apex Kitchen Craft	120	120
+1114	Apex Espresso Machine	Apex Kitchen Craft	100	100
+1115	Apex Stand Mixer	Apex Kitchen Craft	94	94
+1116	Apex Rolling Pin	Apex Kitchen Craft	150	150
+1117	Apex Corkscrew	Apex Kitchen Craft	144	144
+1118	Apex Grater	Apex Kitchen Craft	110	110
+1119	Apex Colander	Apex Kitchen Craft	118	118
+1120	Apex Chef Hat	Apex Kitchen Craft	98	98
+1121	Apex Champagne Flute	Apex Tableware	154	154
+1122	Apex Goblet	Apex Tableware	120	120
+1123	Apex Pitcher	Apex Tableware	100	100
+1124	Apex Gravy Boat	Apex Tableware	136	136
+1125	Apex Serving Cloche	Apex Tableware	108	108
+1126	Apex Decanter	Apex Tableware	118	118
+1127	Apex Milk Jug	Apex Tableware	100	100
+1128	Apex Sugar Bowl	Apex Tableware	108	108
+1129	Apex Egg Cup	Apex Tableware	112	112
+1130	Apex Spoon	Apex Tableware	138	138
+1131	Apex Hammer	Apex Hand Tools	128	128
+1132	Apex Adjustable Wrench	Apex Hand Tools	128	128
+1133	Apex Pliers	Apex Hand Tools	122	122
+1134	Apex Hand Saw	Apex Hand Tools	114	114
+1135	Apex Drill	Apex Hand Tools	110	110
+1136	Apex Paint Roller	Apex Hand Tools	122	122
+1137	Apex Clamp	Apex Hand Tools	106	106
+1138	Apex Spirit Level	Apex Hand Tools	134	134
+1139	Apex Spanner	Apex Hand Tools	134	134
+1140	Apex Anvil	Apex Hand Tools	106	106
+1141	Apex Scissors	Apex Craft & Study	110	110
+1142	Apex Fountain Pen	Apex Craft & Study	164	164
+1143	Apex Ink Bottle	Apex Craft & Study	106	106
+1144	Apex Open Book	Apex Craft & Study	92	92
+1145	Apex Microscope	Apex Craft & Study	110	110
+1146	Apex Globe	Apex Craft & Study	106	106
+1147	Apex Palette	Apex Craft & Study	104	104
+1148	Apex Sewing Machine	Apex Craft & Study	104	104
+1149	Apex Yarn Ball	Apex Craft & Study	106	106
+1150	Apex Compass Divider	Apex Craft & Study	142	142
+1151	Apex Motorcycle	Apex Land Vehicles	124	124
+1152	Apex Scooter	Apex Land Vehicles	124	124
+1153	Apex Tractor	Apex Land Vehicles	110	110
+1154	Apex Fire Engine	Apex Land Vehicles	110	110
+1155	Apex Ambulance	Apex Land Vehicles	106	106
+1156	Apex School Bus	Apex Land Vehicles	106	106
+1157	Apex Bulldozer	Apex Land Vehicles	114	114
+1158	Apex Forklift	Apex Land Vehicles	114	114
+1159	Apex Steamroller	Apex Land Vehicles	108	108
+1160	Apex Racing Kart	Apex Land Vehicles	104	104
+1161	Apex Biplane	Apex Aviation	110	110
+1162	Apex Glider	Apex Aviation	160	160
+1163	Apex Airship	Apex Aviation	120	120
+1164	Apex Quadcopter	Apex Aviation	110	110
+1165	Apex Space Shuttle	Apex Aviation	134	134
+1166	Apex Hang Glider	Apex Aviation	132	132
+1167	Apex Gyrocopter	Apex Aviation	126	126
+1168	Apex Seaplane	Apex Aviation	122	122
+1169	Apex Jet Fighter	Apex Aviation	136	136
+1170	Apex Rescue Helicopter	Apex Aviation	114	114
+1171	Apex Submarine	Apex Watercraft	120	120
+1172	Apex Canoe	Apex Watercraft	152	152
+1173	Apex Kayak	Apex Watercraft	124	124
+1174	Apex Viking Longship	Apex Watercraft	114	114
+1175	Apex Speedboat	Apex Watercraft	150	150
+1176	Apex Tugboat	Apex Watercraft	116	116
+1177	Apex Paddle Steamer	Apex Watercraft	108	108
+1178	Apex Catamaran	Apex Watercraft	124	124
+1179	Apex Gondola	Apex Watercraft	150	150
+1180	Apex Jet Ski	Apex Watercraft	118	118
+1181	Apex Harp	Apex Musical Craft	110	110
+1182	Apex Saxophone	Apex Musical Craft	126	126
+1183	Apex Accordion	Apex Musical Craft	102	102
+1184	Apex French Horn	Apex Musical Craft	106	106
+1185	Apex Banjo	Apex Musical Craft	132	132
+1186	Apex Mandolin	Apex Musical Craft	140	140
+1187	Apex Cello	Apex Musical Craft	136	136
+1188	Apex Bassoon	Apex Musical Craft	130	130
+1189	Apex Clarinet	Apex Musical Craft	152	152
+1190	Apex Xylophone	Apex Musical Craft	130	130
+1191	Apex Tennis Racket	Apex Sport & Toys	130	130
+1192	Apex Badminton Racket	Apex Sport & Toys	144	144
+1193	Apex Bowling Pin	Apex Sport & Toys	130	130
+1194	Apex Baseball Glove	Apex Sport & Toys	110	110
+1195	Apex Ice Skate	Apex Sport & Toys	114	114
+1196	Apex Roller Skate	Apex Sport & Toys	106	106
+1197	Apex Skateboard	Apex Sport & Toys	110	110
+1198	Apex Rocking Horse	Apex Sport & Toys	122	122
+1199	Apex Teddy Bear	Apex Sport & Toys	104	104
+1200	Apex Kite	Apex Sport & Toys	142	142
+1201	Apex Cowboy Hat	Apex Wearables	114	114
+1202	Apex Top Hat	Apex Wearables	106	106
+1203	Apex Sombrero	Apex Wearables	120	120
+1204	Apex High Heel	Apex Wearables	122	122
+1205	Apex Trainer	Apex Wearables	120	120
+1206	Apex Boot	Apex Wearables	106	106
+1207	Apex Mitten	Apex Wearables	102	102
+1208	Apex Sunglasses	Apex Wearables	128	128
+1209	Apex Wristwatch	Apex Wearables	126	126
+1210	Apex Pendant	Apex Wearables	152	152
+1211	Apex Pyramid	Apex Architecture	116	116
+1212	Apex Sphinx	Apex Architecture	110	110
+1213	Apex Torii Gate	Apex Architecture	114	114
+1214	Apex Obelisk	Apex Architecture	126	126
+1215	Apex Clock Tower	Apex Architecture	136	136
+1216	Apex Domed Mosque	Apex Architecture	102	102
+1217	Apex Gothic Cathedral	Apex Architecture	98	98
+1218	Apex Igloo	Apex Architecture	112	112
+1219	Apex Treehouse	Apex Architecture	112	112
+1220	Apex Water Tower	Apex Architecture	124	124
+1221	Apex Dragon	Apex Fantasy	118	118
+1222	Apex Unicorn	Apex Fantasy	128	128
+1223	Apex Phoenix	Apex Fantasy	120	120
+1224	Apex Mermaid	Apex Fantasy	130	130
+1225	Apex Griffin	Apex Fantasy	114	114
+1226	Apex Wizard Hat	Apex Fantasy	124	124
+1227	Apex Magic Wand	Apex Fantasy	152	152
+1228	Apex Crystal Ball	Apex Fantasy	96	96
+1229	Apex Knight Helmet	Apex Fantasy	112	112
+1230	Apex Shield	Apex Fantasy	106	106
+1231	Apex Vintage Camera	Apex Technology	102	102
+1232	Apex Movie Camera	Apex Technology	100	100
+1233	Apex Retro Telephone	Apex Technology	94	94
+1234	Apex Typewriter	Apex Technology	98	98
+1235	Apex Radio	Apex Technology	100	100
+1236	Apex Television	Apex Technology	120	120
+1237	Apex Gramophone	Apex Technology	116	116
+1238	Apex Telescope Mount	Apex Technology	132	132
+1239	Apex Game Joystick	Apex Technology	112	112
+1240	Apex Robot	Apex Technology	112	112
+1241	Apex Compass	Apex Adventure	108	108
+1242	Apex Rucksack	Apex Adventure	104	104
+1243	Apex Binoculars	Apex Adventure	100	100
+1244	Apex Camping Lantern	Apex Adventure	120	120
+1245	Apex Camp Tent	Apex Adventure	114	114
+1246	Apex Climbing Carabiner	Apex Adventure	114	114
+1247	Apex Ship Wheel	Apex Adventure	124	124
+1248	Apex Diving Mask	Apex Adventure	116	116
+1249	Apex Parachute	Apex Adventure	114	114
+1250	Apex Snowmobile	Apex Adventure	118	118
+1251	Apex Elite Lion	Apex Elite Safari	96	96
+1252	Apex Elite Giraffe	Apex Elite Safari	136	136
+1253	Apex Elite Rhinoceros	Apex Elite Safari	114	114
+1254	Apex Elite Hippopotamus	Apex Elite Safari	118	118
+1255	Apex Elite Zebra	Apex Elite Safari	134	134
+1256	Apex Elite Camel	Apex Elite Safari	120	120
+1257	Apex Elite Gorilla	Apex Elite Safari	98	98
+1258	Apex Elite Meerkat	Apex Elite Safari	116	116
+1259	Apex Elite Hyena	Apex Elite Safari	120	120
+1260	Apex Elite Warthog	Apex Elite Safari	118	118
+1261	Apex Elite Wolf	Apex Elite Forest Friends	120	120
+1262	Apex Elite Moose	Apex Elite Forest Friends	122	122
+1263	Apex Elite Bison	Apex Elite Forest Friends	106	106
+1264	Apex Elite Hedgehog	Apex Elite Forest Friends	110	110
+1265	Apex Elite Raccoon	Apex Elite Forest Friends	108	108
+1266	Apex Elite Skunk	Apex Elite Forest Friends	112	112
+1267	Apex Elite Beaver	Apex Elite Forest Friends	104	104
+1268	Apex Elite Badger	Apex Elite Forest Friends	122	122
+1269	Apex Elite Otter	Apex Elite Forest Friends	114	114
+1270	Apex Elite Lynx	Apex Elite Forest Friends	118	118
+1271	Apex Elite Kangaroo	Apex Elite Farm & Outback	134	134
+1272	Apex Elite Koala	Apex Elite Farm & Outback	94	94
+1273	Apex Elite Platypus	Apex Elite Farm & Outback	128	128
+1274	Apex Elite Wombat	Apex Elite Farm & Outback	104	104
+1275	Apex Elite Emu	Apex Elite Farm & Outback	132	132
+1276	Apex Elite Alpaca	Apex Elite Farm & Outback	132	132
+1277	Apex Elite Goat	Apex Elite Farm & Outback	126	126
+1278	Apex Elite Sheep	Apex Elite Farm & Outback	114	114
+1279	Apex Elite Pig	Apex Elite Farm & Outback	120	120
+1280	Apex Elite Rooster	Apex Elite Farm & Outback	120	120
+1281	Apex Elite Crocodile	Apex Elite Reptiles & Amphibians	148	148
+1282	Apex Elite Chameleon	Apex Elite Reptiles & Amphibians	116	116
+1283	Apex Elite Iguana	Apex Elite Reptiles & Amphibians	132	132
+1284	Apex Elite Gecko	Apex Elite Reptiles & Amphibians	124	124
+1285	Apex Elite Komodo Dragon	Apex Elite Reptiles & Amphibians	136	136
+1286	Apex Elite Cobra	Apex Elite Reptiles & Amphibians	114	114
+1287	Apex Elite Coiled Python	Apex Elite Reptiles & Amphibians	102	102
+1288	Apex Elite Frog	Apex Elite Reptiles & Amphibians	102	102
+1289	Apex Elite Axolotl	Apex Elite Reptiles & Amphibians	118	118
+1290	Apex Elite Salamander	Apex Elite Reptiles & Amphibians	114	114
+1291	Apex Elite Flamingo	Apex Elite Bird Wonders	148	148
+1292	Apex Elite Toucan	Apex Elite Bird Wonders	122	122
+1293	Apex Elite Pelican	Apex Elite Bird Wonders	132	132
+1294	Apex Elite Hummingbird	Apex Elite Bird Wonders	138	138
+1295	Apex Elite Kingfisher	Apex Elite Bird Wonders	134	134
+1296	Apex Elite Woodpecker	Apex Elite Bird Wonders	132	132
+1297	Apex Elite Hornbill	Apex Elite Bird Wonders	124	124
+1298	Apex Elite Quail	Apex Elite Bird Wonders	126	126
+1299	Apex Elite Parrot	Apex Elite Bird Wonders	130	130
+1300	Apex Elite Stork	Apex Elite Bird Wonders	158	158
+1301	Apex Elite Manta Ray	Apex Elite Deep Ocean	120	120
+1302	Apex Elite Hammerhead Shark	Apex Elite Deep Ocean	120	120
+1303	Apex Elite Swordfish	Apex Elite Deep Ocean	150	150
+1304	Apex Elite Anglerfish	Apex Elite Deep Ocean	114	114
+1305	Apex Elite Lionfish	Apex Elite Deep Ocean	120	120
+1306	Apex Elite Nautilus	Apex Elite Deep Ocean	114	114
+1307	Apex Elite Lobster	Apex Elite Deep Ocean	118	118
+1308	Apex Elite Shrimp	Apex Elite Deep Ocean	112	112
+1309	Apex Elite Sea Dragon	Apex Elite Deep Ocean	140	140
+1310	Apex Elite Seal	Apex Elite Deep Ocean	134	134
+1311	Apex Elite Dragonfly	Apex Elite Tiny Creatures	116	116
+1312	Apex Elite Ladybird	Apex Elite Tiny Creatures	118	118
+1313	Apex Elite Stag Beetle	Apex Elite Tiny Creatures	116	116
+1314	Apex Elite Grasshopper	Apex Elite Tiny Creatures	136	136
+1315	Apex Elite Praying Mantis	Apex Elite Tiny Creatures	124	124
+1316	Apex Elite Hercules Beetle	Apex Elite Tiny Creatures	120	120
+1317	Apex Elite Scorpion	Apex Elite Tiny Creatures	112	112
+1318	Apex Elite Ant	Apex Elite Tiny Creatures	116	116
+1319	Apex Elite Spider	Apex Elite Tiny Creatures	116	116
+1320	Apex Elite Cicada	Apex Elite Tiny Creatures	104	104
+1321	Apex Elite Rose	Apex Elite Flower Studio	130	130
+1322	Apex Elite Lotus	Apex Elite Flower Studio	122	122
+1323	Apex Elite Daffodil	Apex Elite Flower Studio	126	126
+1324	Apex Elite Orchid	Apex Elite Flower Studio	114	114
+1325	Apex Elite Hibiscus	Apex Elite Flower Studio	108	108
+1326	Apex Elite Daisy	Apex Elite Flower Studio	122	122
+1327	Apex Elite Poppy	Apex Elite Flower Studio	108	108
+1328	Apex Elite Lavender	Apex Elite Flower Studio	130	130
+1329	Apex Elite Iris	Apex Elite Flower Studio	120	120
+1330	Apex Elite Calla Lily	Apex Elite Flower Studio	132	132
+1331	Apex Elite Monstera Leaf	Apex Elite Botanical	110	110
+1332	Apex Elite Ginkgo Leaf	Apex Elite Botanical	114	114
+1333	Apex Elite Fern Frond	Apex Elite Botanical	122	122
+1334	Apex Elite Bonsai	Apex Elite Botanical	104	104
+1335	Apex Elite Baobab	Apex Elite Botanical	114	114
+1336	Apex Elite Weeping Willow	Apex Elite Botanical	106	106
+1337	Apex Elite Coral Branch	Apex Elite Botanical	124	124
+1338	Apex Elite Venus Flytrap	Apex Elite Botanical	118	118
+1339	Apex Elite Bamboo	Apex Elite Botanical	148	148
+1340	Apex Elite Succulent	Apex Elite Botanical	110	110
+1341	Apex Elite Pear	Apex Elite Orchard & Harvest	126	126
+1342	Apex Elite Strawberry	Apex Elite Orchard & Harvest	110	110
+1343	Apex Elite Banana	Apex Elite Orchard & Harvest	138	138
+1344	Apex Elite Orange Slice	Apex Elite Orchard & Harvest	122	122
+1345	Apex Elite Watermelon Slice	Apex Elite Orchard & Harvest	110	110
+1346	Apex Elite Aubergine	Apex Elite Orchard & Harvest	122	122
+1347	Apex Elite Bell Pepper	Apex Elite Orchard & Harvest	112	112
+1348	Apex Elite Broccoli	Apex Elite Orchard & Harvest	102	102
+1349	Apex Elite Pumpkin	Apex Elite Orchard & Harvest	104	104
+1350	Apex Elite Radish	Apex Elite Orchard & Harvest	128	128
+1351	Apex Elite Croissant	Apex Elite Sweet Bakery	132	132
+1352	Apex Elite Pretzel	Apex Elite Sweet Bakery	96	96
+1353	Apex Elite Donut	Apex Elite Sweet Bakery	96	96
+1354	Apex Elite Layer Cake	Apex Elite Sweet Bakery	110	110
+1355	Apex Elite Gingerbread Person	Apex Elite Sweet Bakery	112	112
+1356	Apex Elite Waffle	Apex Elite Sweet Bakery	90	90
+1357	Apex Elite Honey Dipper	Apex Elite Sweet Bakery	146	146
+1358	Apex Elite Candy Cane	Apex Elite Sweet Bakery	146	146
+1359	Apex Elite Wrapped Candy	Apex Elite Sweet Bakery	128	128
+1360	Apex Elite Macaron	Apex Elite Sweet Bakery	98	98
+1361	Apex Elite Kettle	Apex Elite Kitchen Craft	100	100
+1362	Apex Elite Teapot	Apex Elite Kitchen Craft	112	112
+1363	Apex Elite French Press	Apex Elite Kitchen Craft	120	120
+1364	Apex Elite Espresso Machine	Apex Elite Kitchen Craft	100	100
+1365	Apex Elite Stand Mixer	Apex Elite Kitchen Craft	94	94
+1366	Apex Elite Rolling Pin	Apex Elite Kitchen Craft	150	150
+1367	Apex Elite Corkscrew	Apex Elite Kitchen Craft	144	144
+1368	Apex Elite Grater	Apex Elite Kitchen Craft	110	110
+1369	Apex Elite Colander	Apex Elite Kitchen Craft	118	118
+1370	Apex Elite Chef Hat	Apex Elite Kitchen Craft	98	98
+1371	Apex Elite Champagne Flute	Apex Elite Tableware	154	154
+1372	Apex Elite Goblet	Apex Elite Tableware	120	120
+1373	Apex Elite Pitcher	Apex Elite Tableware	100	100
+1374	Apex Elite Gravy Boat	Apex Elite Tableware	136	136
+1375	Apex Elite Serving Cloche	Apex Elite Tableware	108	108
+1376	Apex Elite Decanter	Apex Elite Tableware	118	118
+1377	Apex Elite Milk Jug	Apex Elite Tableware	100	100
+1378	Apex Elite Sugar Bowl	Apex Elite Tableware	108	108
+1379	Apex Elite Egg Cup	Apex Elite Tableware	112	112
+1380	Apex Elite Spoon	Apex Elite Tableware	138	138
+1381	Apex Elite Hammer	Apex Elite Hand Tools	128	128
+1382	Apex Elite Adjustable Wrench	Apex Elite Hand Tools	128	128
+1383	Apex Elite Pliers	Apex Elite Hand Tools	122	122
+1384	Apex Elite Hand Saw	Apex Elite Hand Tools	114	114
+1385	Apex Elite Drill	Apex Elite Hand Tools	110	110
+1386	Apex Elite Paint Roller	Apex Elite Hand Tools	122	122
+1387	Apex Elite Clamp	Apex Elite Hand Tools	106	106
+1388	Apex Elite Spirit Level	Apex Elite Hand Tools	134	134
+1389	Apex Elite Spanner	Apex Elite Hand Tools	134	134
+1390	Apex Elite Anvil	Apex Elite Hand Tools	106	106
+1391	Apex Elite Scissors	Apex Elite Craft & Study	110	110
+1392	Apex Elite Fountain Pen	Apex Elite Craft & Study	164	164
+1393	Apex Elite Ink Bottle	Apex Elite Craft & Study	106	106
+1394	Apex Elite Open Book	Apex Elite Craft & Study	92	92
+1395	Apex Elite Microscope	Apex Elite Craft & Study	110	110
+1396	Apex Elite Globe	Apex Elite Craft & Study	106	106
+1397	Apex Elite Palette	Apex Elite Craft & Study	104	104
+1398	Apex Elite Sewing Machine	Apex Elite Craft & Study	104	104
+1399	Apex Elite Yarn Ball	Apex Elite Craft & Study	106	106
+1400	Apex Elite Compass Divider	Apex Elite Craft & Study	142	142
+1401	Apex Elite Motorcycle	Apex Elite Land Vehicles	124	124
+1402	Apex Elite Scooter	Apex Elite Land Vehicles	124	124
+1403	Apex Elite Tractor	Apex Elite Land Vehicles	110	110
+1404	Apex Elite Fire Engine	Apex Elite Land Vehicles	110	110
+1405	Apex Elite Ambulance	Apex Elite Land Vehicles	106	106
+1406	Apex Elite School Bus	Apex Elite Land Vehicles	106	106
+1407	Apex Elite Bulldozer	Apex Elite Land Vehicles	114	114
+1408	Apex Elite Forklift	Apex Elite Land Vehicles	114	114
+1409	Apex Elite Steamroller	Apex Elite Land Vehicles	108	108
+1410	Apex Elite Racing Kart	Apex Elite Land Vehicles	104	104
+1411	Apex Elite Biplane	Apex Elite Aviation	110	110
+1412	Apex Elite Glider	Apex Elite Aviation	160	160
+1413	Apex Elite Airship	Apex Elite Aviation	120	120
+1414	Apex Elite Quadcopter	Apex Elite Aviation	110	110
+1415	Apex Elite Space Shuttle	Apex Elite Aviation	134	134
+1416	Apex Elite Hang Glider	Apex Elite Aviation	132	132
+1417	Apex Elite Gyrocopter	Apex Elite Aviation	126	126
+1418	Apex Elite Seaplane	Apex Elite Aviation	122	122
+1419	Apex Elite Jet Fighter	Apex Elite Aviation	136	136
+1420	Apex Elite Rescue Helicopter	Apex Elite Aviation	114	114
+1421	Apex Elite Submarine	Apex Elite Watercraft	120	120
+1422	Apex Elite Canoe	Apex Elite Watercraft	152	152
+1423	Apex Elite Kayak	Apex Elite Watercraft	124	124
+1424	Apex Elite Viking Longship	Apex Elite Watercraft	114	114
+1425	Apex Elite Speedboat	Apex Elite Watercraft	150	150
+1426	Apex Elite Tugboat	Apex Elite Watercraft	116	116
+1427	Apex Elite Paddle Steamer	Apex Elite Watercraft	108	108
+1428	Apex Elite Catamaran	Apex Elite Watercraft	124	124
+1429	Apex Elite Gondola	Apex Elite Watercraft	150	150
+1430	Apex Elite Jet Ski	Apex Elite Watercraft	118	118
+1431	Apex Elite Harp	Apex Elite Musical Craft	110	110
+1432	Apex Elite Saxophone	Apex Elite Musical Craft	126	126
+1433	Apex Elite Accordion	Apex Elite Musical Craft	102	102
+1434	Apex Elite French Horn	Apex Elite Musical Craft	106	106
+1435	Apex Elite Banjo	Apex Elite Musical Craft	132	132
+1436	Apex Elite Mandolin	Apex Elite Musical Craft	140	140
+1437	Apex Elite Cello	Apex Elite Musical Craft	136	136
+1438	Apex Elite Bassoon	Apex Elite Musical Craft	130	130
+1439	Apex Elite Clarinet	Apex Elite Musical Craft	152	152
+1440	Apex Elite Xylophone	Apex Elite Musical Craft	130	130
+1441	Apex Elite Tennis Racket	Apex Elite Sport & Toys	130	130
+1442	Apex Elite Badminton Racket	Apex Elite Sport & Toys	144	144
+1443	Apex Elite Bowling Pin	Apex Elite Sport & Toys	130	130
+1444	Apex Elite Baseball Glove	Apex Elite Sport & Toys	110	110
+1445	Apex Elite Ice Skate	Apex Elite Sport & Toys	114	114
+1446	Apex Elite Roller Skate	Apex Elite Sport & Toys	106	106
+1447	Apex Elite Skateboard	Apex Elite Sport & Toys	110	110
+1448	Apex Elite Rocking Horse	Apex Elite Sport & Toys	122	122
+1449	Apex Elite Teddy Bear	Apex Elite Sport & Toys	104	104
+1450	Apex Elite Kite	Apex Elite Sport & Toys	142	142
+1451	Apex Elite Cowboy Hat	Apex Elite Wearables	114	114
+1452	Apex Elite Top Hat	Apex Elite Wearables	106	106
+1453	Apex Elite Sombrero	Apex Elite Wearables	120	120
+1454	Apex Elite High Heel	Apex Elite Wearables	122	122
+1455	Apex Elite Trainer	Apex Elite Wearables	120	120
+1456	Apex Elite Boot	Apex Elite Wearables	106	106
+1457	Apex Elite Mitten	Apex Elite Wearables	102	102
+1458	Apex Elite Sunglasses	Apex Elite Wearables	128	128
+1459	Apex Elite Wristwatch	Apex Elite Wearables	126	126
+1460	Apex Elite Pendant	Apex Elite Wearables	152	152
+1461	Apex Elite Pyramid	Apex Elite Architecture	116	116
+1462	Apex Elite Sphinx	Apex Elite Architecture	110	110
+1463	Apex Elite Torii Gate	Apex Elite Architecture	114	114
+1464	Apex Elite Obelisk	Apex Elite Architecture	126	126
+1465	Apex Elite Clock Tower	Apex Elite Architecture	136	136
+1466	Apex Elite Domed Mosque	Apex Elite Architecture	102	102
+1467	Apex Elite Gothic Cathedral	Apex Elite Architecture	98	98
+1468	Apex Elite Igloo	Apex Elite Architecture	112	112
+1469	Apex Elite Treehouse	Apex Elite Architecture	112	112
+1470	Apex Elite Water Tower	Apex Elite Architecture	124	124
+1471	Apex Elite Dragon	Apex Elite Fantasy	118	118
+1472	Apex Elite Unicorn	Apex Elite Fantasy	128	128
+1473	Apex Elite Phoenix	Apex Elite Fantasy	120	120
+1474	Apex Elite Mermaid	Apex Elite Fantasy	130	130
+1475	Apex Elite Griffin	Apex Elite Fantasy	114	114
+1476	Apex Elite Wizard Hat	Apex Elite Fantasy	124	124
+1477	Apex Elite Magic Wand	Apex Elite Fantasy	152	152
+1478	Apex Elite Crystal Ball	Apex Elite Fantasy	96	96
+1479	Apex Elite Knight Helmet	Apex Elite Fantasy	112	112
+1480	Apex Elite Shield	Apex Elite Fantasy	106	106
+1481	Apex Elite Vintage Camera	Apex Elite Technology	102	102
+1482	Apex Elite Movie Camera	Apex Elite Technology	100	100
+1483	Apex Elite Retro Telephone	Apex Elite Technology	94	94
+1484	Apex Elite Typewriter	Apex Elite Technology	98	98
+1485	Apex Elite Radio	Apex Elite Technology	100	100
+1486	Apex Elite Television	Apex Elite Technology	120	120
+1487	Apex Elite Gramophone	Apex Elite Technology	116	116
+1488	Apex Elite Telescope Mount	Apex Elite Technology	132	132
+1489	Apex Elite Game Joystick	Apex Elite Technology	112	112
+1490	Apex Elite Robot	Apex Elite Technology	112	112
+1491	Apex Elite Compass	Apex Elite Adventure	108	108
+1492	Apex Elite Rucksack	Apex Elite Adventure	104	104
+1493	Apex Elite Binoculars	Apex Elite Adventure	100	100
+1494	Apex Elite Camping Lantern	Apex Elite Adventure	120	120
+1495	Apex Elite Camp Tent	Apex Elite Adventure	114	114
+1496	Apex Elite Climbing Carabiner	Apex Elite Adventure	114	114
+1497	Apex Elite Ship Wheel	Apex Elite Adventure	124	124
+1498	Apex Elite Diving Mask	Apex Elite Adventure	116	116
+1499	Apex Elite Parachute	Apex Elite Adventure	114	114
+1500	Apex Elite Snowmobile	Apex Elite Adventure	118	118

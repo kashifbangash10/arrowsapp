@@ -1,0 +1,184 @@
+package com.amowpuzzle.aitricker.data.sound
+
+import android.media.AudioAttributes
+import android.media.AudioFormat
+import android.media.AudioTrack
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlin.math.PI
+import kotlin.math.exp
+import kotlin.math.sin
+
+class SoundSynthesizer(private var isSoundEnabled: Boolean = true) {
+
+    private val sampleRate = 44100
+    private val scope = CoroutineScope(Dispatchers.Default)
+
+    fun setSoundEnabled(enabled: Boolean) {
+        this.isSoundEnabled = enabled
+    }
+
+    /**
+     * Plays an arrow launch swoosh sound (frequency ramp down).
+     */
+    fun playSwoosh() {
+        if (!isSoundEnabled) return
+        scope.launch {
+            val durationMs = 120
+            val numSamples = sampleRate * durationMs / 1000
+            val buffer = ShortArray(numSamples)
+
+            val startFreq = 800.0
+            val endFreq = 180.0
+
+            for (i in 0 until numSamples) {
+                val progress = i.toDouble() / numSamples
+                val currentFreq = startFreq + (endFreq - startFreq) * progress
+                val phase = 2.0 * PI * currentFreq * i / sampleRate
+                val envelope = (1.0 - progress) * exp(-2.0 * progress)
+                val sample = (sin(phase) * envelope * 0.5 * Short.MAX_VALUE).toInt()
+                buffer[i] = sample.coerceIn(Short.MIN_VALUE.toInt(), Short.MAX_VALUE.toInt()).toShort()
+            }
+            playPcmBuffer(buffer)
+        }
+    }
+
+    /**
+     * Plays a golden coin chime (+10 points dual high harmonic bell).
+     */
+    fun playCoinChime() {
+        if (!isSoundEnabled) return
+        scope.launch {
+            val durationMs = 250
+            val numSamples = sampleRate * durationMs / 1000
+            val buffer = ShortArray(numSamples)
+
+            val freq1 = 1318.51 // E6
+            val freq2 = 1567.98 // G6
+
+            for (i in 0 until numSamples) {
+                val progress = i.toDouble() / numSamples
+                val phase1 = 2.0 * PI * freq1 * i / sampleRate
+                val phase2 = 2.0 * PI * freq2 * i / sampleRate
+                val envelope = exp(-8.0 * progress)
+                val sample = ((sin(phase1) + sin(phase2) * 0.7) * envelope * 0.4 * Short.MAX_VALUE).toInt()
+                buffer[i] = sample.coerceIn(Short.MIN_VALUE.toInt(), Short.MAX_VALUE.toInt()).toShort()
+            }
+            playPcmBuffer(buffer)
+        }
+    }
+
+    /**
+     * Plays a wobbly angry penalty buzzer (-10 points / blocked tap).
+     */
+    fun playAngryBuzzer() {
+        if (!isSoundEnabled) return
+        scope.launch {
+            val durationMs = 220
+            val numSamples = sampleRate * durationMs / 1000
+            val buffer = ShortArray(numSamples)
+
+            val baseFreq = 140.0
+
+            for (i in 0 until numSamples) {
+                val progress = i.toDouble() / numSamples
+                // Wobble modulation
+                val wobble = sin(2.0 * PI * 25.0 * progress) * 20.0
+                val freq = baseFreq + wobble
+                val phase = 2.0 * PI * freq * i / sampleRate
+                // Square wave approximation for harsh buzzer tone
+                val wave = if (sin(phase) >= 0) 1.0 else -1.0
+                val envelope = exp(-3.0 * progress)
+                val sample = (wave * envelope * 0.35 * Short.MAX_VALUE).toInt()
+                buffer[i] = sample.coerceIn(Short.MIN_VALUE.toInt(), Short.MAX_VALUE.toInt()).toShort()
+            }
+            playPcmBuffer(buffer)
+        }
+    }
+
+    /**
+     * Plays a rising hint glissando (arpeggio chime).
+     */
+    fun playHintGlissando() {
+        if (!isSoundEnabled) return
+        scope.launch {
+            val durationMs = 350
+            val numSamples = sampleRate * durationMs / 1000
+            val buffer = ShortArray(numSamples)
+
+            val frequencies = listOf(523.25, 659.25, 783.99, 1046.50) // C5, E5, G5, C6
+
+            for (i in 0 until numSamples) {
+                val progress = i.toDouble() / numSamples
+                val noteIndex = (progress * frequencies.size).toInt().coerceIn(0, frequencies.size - 1)
+                val freq = frequencies[noteIndex]
+                val phase = 2.0 * PI * freq * i / sampleRate
+                val envelope = 0.5 + 0.5 * sin(PI * progress)
+                val sample = (sin(phase) * envelope * 0.4 * Short.MAX_VALUE).toInt()
+                buffer[i] = sample.coerceIn(Short.MIN_VALUE.toInt(), Short.MAX_VALUE.toInt()).toShort()
+            }
+            playPcmBuffer(buffer)
+        }
+    }
+
+    /**
+     * Plays a triumphant victory fanfare chord sequence.
+     */
+    fun playVictoryFanfare() {
+        if (!isSoundEnabled) return
+        scope.launch {
+            val durationMs = 600
+            val numSamples = sampleRate * durationMs / 1000
+            val buffer = ShortArray(numSamples)
+
+            val notes = listOf(523.25, 659.25, 783.99, 1046.50) // C Major chord
+
+            for (i in 0 until numSamples) {
+                val progress = i.toDouble() / numSamples
+                val envelope = exp(-3.0 * progress)
+                var combinedWave = 0.0
+                for (freq in notes) {
+                    combinedWave += sin(2.0 * PI * freq * i / sampleRate)
+                }
+                val sample = (combinedWave / notes.size * envelope * 0.5 * Short.MAX_VALUE).toInt()
+                buffer[i] = sample.coerceIn(Short.MIN_VALUE.toInt(), Short.MAX_VALUE.toInt()).toShort()
+            }
+            playPcmBuffer(buffer)
+        }
+    }
+
+    private fun playPcmBuffer(buffer: ShortArray) {
+        try {
+            val track = AudioTrack.Builder()
+                .setAudioAttributes(
+                    AudioAttributes.Builder()
+                        .setUsage(AudioAttributes.USAGE_GAME)
+                        .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                        .build()
+                )
+                .setAudioFormat(
+                    AudioFormat.Builder()
+                        .setEncoding(AudioFormat.ENCODING_PCM_16BIT)
+                        .setSampleRate(sampleRate)
+                        .setChannelMask(AudioFormat.CHANNEL_OUT_MONO)
+                        .build()
+                )
+                .setBufferSizeInBytes(buffer.size * 2)
+                .setTransferMode(AudioTrack.MODE_STATIC)
+                .build()
+
+            track.write(buffer, 0, buffer.size)
+            track.play()
+            
+            // Release after playback finished
+            scope.launch {
+                kotlinx.coroutines.delay((buffer.size * 1000L / sampleRate) + 100)
+                track.stop()
+                track.release()
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+}

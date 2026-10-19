@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The XML palette only covers what the platform needs before Compose starts:
+      the launcher icon, the splash window and the system bars. Everything the game
+      itself draws lives in ui/theme/Palette.kt.
+    -->
+    <color name="brand_navy">#FF101B3C</color>
+    <color name="brand_blue">#FF1E9BF5</color>
+    <color name="brand_white">#FFFFFFFF</color>
+    <color name="brand_mist">#FFF6FAFF</color>
+
+    <!-- Launcher icon: white mark on the brand blue. -->
+    <color name="ic_launcher_background">#FF1E9BF5</color>
+</resources>
